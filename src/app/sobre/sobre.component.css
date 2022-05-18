@@ -1,0 +1,11 @@
+.sobre{
+  display:inline-block;
+    position: relative;
+    margin-top: 8%;
+    margin-left: 25%;
+}
+p{
+  display: inline;
+  color:black
+}
+
