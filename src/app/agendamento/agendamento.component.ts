@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {  Component,  ChangeDetectionStrategy,  ViewChild,  TemplateRef,  OnInit,} from '@angular/core';
+import {FormGroup, FormControl} from '@angular/forms';
 
 @Component({
   selector: 'app-agendamento',
@@ -6,7 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./agendamento.component.css']
 })
 export class AgendamentoComponent implements OnInit {
-
+  range = new FormGroup({
+    start: new FormControl(),
+    end: new FormControl(),
+  });
   constructor() { }
 
   ngOnInit(): void {
