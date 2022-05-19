@@ -32,7 +32,7 @@ p {
   height: 100px;
   display:inline-flex;
   align-items: center;
-  background-color: #1976d2;
+  background-color: #a37115;
   color: white;
   font-weight: 600;
 }
@@ -156,7 +156,7 @@ svg#rocket-smoke {
 a,
 a:visited,
 a:hover {
-  color: #1976d2;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -305,15 +305,25 @@ svg#clouds {
   margin-left: 13.8%;
 }
 
+.container-fluid{
+  position: absolute;
+  display: inline;
+  width: 100%;
+  padding: 0px;
+}
+
 .nav-item{
-position: relative;
-display: flex;
-margin-right: 10%;
-margin-left: -3%;
-margin-top: 21%;
+  position: relative;
+  display: flex;
+  margin-left: -0.2%;
+  margin-top: 5%;
+  width: 105%;
+  background-color: rgb(98, 156, 159);
+  z-index: 3;
 }
 .nav-link{
-  background-color: aquamarine;
+  margin-left: 2% ;
+  border-radius: 12px;
 }
 
 img{
@@ -327,4 +337,5 @@ span{
 .redondo{
   margin-top: 7%;
   margin-left: -2.8%;
+  z-index: 4;
 }
