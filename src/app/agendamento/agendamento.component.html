@@ -27,19 +27,23 @@
         <h1>Agendamento</h1>
       </div>
         <div class="card-A">
+          <div class="datetimecontent">
           <mat-form-field appearance="fill">
-            <mat-label>Choose a date</mat-label>
+            <mat-label>Escolha aqui sua data</mat-label>
             <input matInput [matDatepicker]="picker">
-            <mat-hint>MM/DD/YYYY</mat-hint>
-            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker-toggle matSuffix [for]="picker"> </mat-datepicker-toggle>
             <mat-datepicker #picker></mat-datepicker>
-          </mat-form-field>
-          <mat-form-field appearance="fill">
-            <mat-label>Choose a time</mat-label>
-            <mat-hint>HH:MM</mat-hint>
-            <input matInput type="time" formControlName="time" name="time" #time>
+            <mat-hint>MM/DD/YYYY</mat-hint>
 
           </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label>Escolha aqui horário do seu atendimento</mat-label>
+            <mat-hint>HH:MM</mat-hint>
+            <div [formGroup]="myTime">
+            <input matInput type="time" formControlName="time" name="time" #time>
+          </div>
+          </mat-form-field>
+        </div>
         </div>
       </div>
 

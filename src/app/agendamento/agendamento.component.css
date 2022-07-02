@@ -332,6 +332,7 @@ svg#clouds {
   color: rgb(5, 91, 5);
   text-align:justify;
   padding-top: 5%;
+  padding-left: 20%;
 }
 
 .home-content{
@@ -344,4 +345,10 @@ svg#clouds {
   position: relative;
   text-align: center;
   border-radius: 5px;
+}
+
+.datetimecontent{
+  background-image: linear-gradient(to top, white, #6a594f);
+  border-radius: 5px;
+  width:fit-content;
 }

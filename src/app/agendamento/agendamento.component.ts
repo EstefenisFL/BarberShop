@@ -7,13 +7,13 @@ import {FormGroup, FormControl} from '@angular/forms';
   styleUrls: ['./agendamento.component.css']
 })
 export class AgendamentoComponent implements OnInit {
-  range = new FormGroup({
-    start: new FormControl(),
-    end: new FormControl(),
+  myTime = new FormGroup({
+    time: new FormControl()
   });
+
+
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { }
 
 }
